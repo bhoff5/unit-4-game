@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+</head>
+
+<body>
+    <div id="gameWindow">
+        <header>
+            <h1>CRYSTAL COLLECTOR</h1>
+            <h3 id="magicNumber"></h3>
+        </header>
+        <div class="imageContainer">
+
+            <div id="crystal1" class="crystalContainer">
+                <img class="crystalImage" id="crystalImage1" src="assets/images/crystal1.png">
+                <img id="crystalBG1" src="assets/images/crystal1bg.png">
+            </div>
+            <div id="crystal2" class="crystalContainer">
+                <img class="crystalImage" id="crystalImage2" src="assets/images/crystal2.png">
+                <img id="crystalBG2" src="assets/images/crystal2bg.png">
+
+            </div>
+            <div id="crystal3" class="crystalContainer">
+                <img class="crystalImage" id="crystalImage3" src="assets/images/crystal3.png">
+                <img id="crystalBG3" src="assets/images/crystal3bg.png">
+
+            </div>
+            <div id="crystal4" class="crystalContainer">
+                <img class="crystalImage" id="crystalImage4" src="assets/images/crystal4.png">
+                <img id="crystalBG4" src="assets/images/crystal4bg.png">
+            </div>
+        </div>
+        <div id="scoreArea">
+            <div class="scoreBox">
+                <h3>WINS</h3>
+                <h3 id="wins"></h3>
+            </div>
+
+            <div class="scoreBox">
+                <button id="playAgain" type="button">PLAY AGAIN</button>
+            </div>
+            <div class="scoreBox">
+                <h3>LOSSES</h3>
+                <h3 id="losses"></h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

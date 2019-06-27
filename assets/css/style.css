@@ -1,0 +1,158 @@
+body {
+    background-color: rgb(44, 43, 43);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+
+
+.imageContainer {
+    display: flex;
+    width: 800px;
+    height: 100px;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 200px;
+}
+
+.imageContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.crystalContainer {
+height: 100%;
+position: relative;
+margin: 40px;
+margin-top:100px;
+}
+
+.crystalContainer .crystalImage {
+    height: 100%;
+}
+
+
+
+.crystalImage:hover {
+    transform: scale(1.2);
+}
+
+@keyframes bgAnimate1 {
+    0% {
+        transform: scale(2.6)
+    }
+    50% {
+        transform: scale(3.2)
+    }
+    100% {
+        transform: scale(2.6)
+    }
+}
+
+#crystalBG1 {
+    z-index: -1000;
+    animation: bgAnimate1 3s ease-in-out infinite;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: scale(2);
+    bottom: 0;
+}
+
+#crystalBG2 {
+    z-index: -1000;
+    animation: bgAnimate1 4s ease-in-out infinite;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: scale(2);
+    bottom: 0;
+    opacity: 0.5;
+
+}
+
+#crystalBG3 {
+    z-index: -1000;
+    animation: bgAnimate1 4.5s ease-in-out infinite;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: scale(2);
+    bottom: 0;
+}
+
+#crystalBG4 {
+    z-index: -1000;
+    animation: bgAnimate1 3.5s ease-in-out infinite;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: scale(2);
+    bottom: 0;
+    opacity: 0.3;
+}
+
+header {
+    color: white;
+ 
+    font-size: 30px;
+ 
+    letter-spacing: 4px;
+    text-shadow: 0 0 5px rgba(244, 248, 3, 0.808);
+    width: 600px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+}
+
+#gameWindow {
+    width: 800px;
+    margin: auto;
+}
+
+#scoreArea {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+.scoreBox {
+    margin: 40px;
+    margin-bottom: 0;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 50px;
+}
+
+#magicNumber {
+    margin-top: 40px;
+    font-size: 60px;
+    color: rgba(250, 212, 45, 0.76);
+}
+
+#grayscale {
+    margin-top: 40px;
+    font-size: 60px;
+    color: rgba(119, 117, 117, 0.76);
+    text-shadow: none;
+}
+
+#playAgain {
+    background-color: rgba(250, 212, 45, 0.76);
+    border: none;
+    color: white;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+#losses, #wins {
+    padding-top: 0;
+    font-size: 40px;
+}
