@@ -12,11 +12,11 @@ $(document).ready(function () {
 
     function randomValues() {
 
-        magicNumber = Math.floor(Math.random() * 100) + 50;
-        crystal1Val = Math.floor(Math.random() * 15) + 1;
-        crystal2Val = Math.floor(Math.random() * 15) + 1;
-        crystal3Val = Math.floor(Math.random() * 15) + 1;
-        crystal4Val = Math.floor(Math.random() * 15) + 1;
+        magicNumber = Math.floor(Math.random() * 50) + 50;
+        crystal2Val = Math.floor(Math.random() * 10) + 2;
+        crystal3Val = Math.floor(Math.random() * 10) + 2;
+        crystal4Val = Math.floor(Math.random() * 10) + 2;
+        crystal1Val = Math.floor(Math.random() * 10) + 2;
     }
 
     function newGame() {
@@ -34,6 +34,7 @@ $(document).ready(function () {
     function youWin() {
         wins++
         $("#wins").text(wins);
+
     }
 
     function youLose() {
@@ -44,6 +45,8 @@ $(document).ready(function () {
 
     $(".crystalImage").on("click", function () {
         if (pause === false) {
+            var audio = new Audio("assets/images/winsound.wav");
+            audio.play();
             var crystalVal = $(this).attr("data-crystalvalue");
             magicNumber = magicNumber - parseInt(crystalVal);
             $("#magicNumber").text(magicNumber);

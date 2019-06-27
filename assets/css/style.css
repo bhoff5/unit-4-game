@@ -29,6 +29,7 @@ margin-top:100px;
 
 .crystalContainer .crystalImage {
     height: 100%;
+    opacity: 0.8;
 }
 
 
@@ -144,7 +145,7 @@ h3 {
 }
 
 #playAgain {
-    background-color: rgba(250, 212, 45, 0.76);
+    background-color: rgba(84, 78, 137, 0.76);
     border: none;
     color: white;
     height: 50px;
