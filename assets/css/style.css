@@ -1,8 +1,7 @@
 body {
-    background-color: rgb(44, 43, 43);
+    background-color: rgb(26, 22, 22);
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
-
 
 
 .imageContainer {
@@ -95,9 +94,7 @@ margin-top:100px;
 
 header {
     color: white;
- 
     font-size: 30px;
- 
     letter-spacing: 4px;
     text-shadow: 0 0 5px rgba(244, 248, 3, 0.808);
     width: 600px;
